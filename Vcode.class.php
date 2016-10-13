@@ -151,6 +151,11 @@ class Vcode{
 		return $this->code;
 	}
 
+	// 析构方法，释放资源内存
+	function __destruct(){
+		imagedestroy($this->image);
+	}
+
 }
 
 ?>
